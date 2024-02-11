@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="./scss/stylesagecalculator.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- Formulario -->
+        <section class="data-date">
+            <form action="" id="formDate">
+                <div>
+                    <label for="day">
+                        Day
+                        <input type="text" id="day" placeholder="DD" minlength="1" maxlength="2" pattern="[0-9]" autocomplete="off">
+                        <p class="error error-day">Must be a valid day</p>
+                    </label>
+                </div>
+                <div>
+                    <label for="month">
+                        Month
+                        <input type="text" id="month" placeholder="MM" minlength="1" maxlength="2" pattern="[0-9]*" autocomplete="off">
+                        <p class="error error-month">Must be a valid month</p>
+                    </label>
+                </div>
+                <div>
+                    <label for="year">
+                        Year
+                        <input type="text" id="year" placeholder="YYYY"minlength="1" maxlength="4" pattern="[0-9]*" autocomplete="off">
+                        <p class="error error-year">Must be a valid year</p>
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <!-- Boton -->
+        <section class="data-bottom">
+            <div>
+                <img src="/assets/images/icon-arrow.svg" alt="">
+            </div>
+        </section>
+
+        <!-- Resultados -->
+        <section class="data-result">
+            <p><span class="span-year">--</span> years</p>
+            <p><span class="span-month">--</span> months</p>
+            <p><span class="span-days">--</span> days</p>
+        </section>
+    </main>
+    <script type="module" src="/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+$widthMobile: 600px;
+$widthDesktop: 1440px;
+
+// ## Colors
+$primaryColorPurple: hsl(259, 100%, 65%);
+$primaryColorLightRed: hsl(0, 100%, 67%);
+$neutralColorWhite: hsl(0, 0%, 100%);
+$neutralColorOffWhite: hsl(0, 0%, 94%);
+$neutralColorLightGrey: hsl(0, 0%, 86%);
+$neutralColorSmokeyGrey: hsl(0, 1%, 44%);
+$neutralColorOffBlack: hsl(0, 0%, 8%);
+
+// ## Typography
+
+$fontSizeInput: 32px;
+$fontFamily: 'Poppins', sans-serif;
+
+// Margins, paddings, radios
+$paddingMain: 35px;
+$radiusMain: 30px;
+$widthDataBottom: 60px;

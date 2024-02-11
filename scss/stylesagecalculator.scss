@@ -1,0 +1,158 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+body {
+    background-color: $neutralColorOffWhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invalid-date-label {
+    color: $primaryColorLightRed !important;
+}
+
+.invalid-date-input {
+    border: 1px solid $primaryColorLightRed !important;
+}
+
+.error {
+    display: none !important;
+}
+
+.display-input {
+    display: block !important;
+}
+
+main {
+    width: 90%;
+    background-color: $neutralColorWhite;
+    padding: $paddingMain;
+    border-radius: $radiusMain $radiusMain calc($radiusMain * 5) $radiusMain ;
+    display: flex;
+    flex-direction: column;
+
+    .data-date {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, 30%);
+        // justify-content: space-between;
+        // gap: 2px;
+
+        // @media (width > $widthMobile) {
+        //     width: 80%;
+        //     // grid-template-columns: repeat(auto-fit, 30%);
+        //     justify-content: start;
+        //     gap: 10px;
+        // }
+    }
+
+    .data-date form {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30%);
+        justify-content: space-between;
+        gap: 2px;
+
+        @media (width > $widthMobile) {
+            width: 80%;
+            // grid-template-columns: repeat(auto-fit, 30%);
+            justify-content: start;
+            gap: 10px;
+        }
+    }
+
+    .data-date label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        color: $neutralColorSmokeyGrey;
+        // color: $primaryColorLightRed;
+    }
+
+    .data-date label p {
+        color: $primaryColorLightRed;
+        // font-size: 0.8rem;
+        text-transform: capitalize;
+        letter-spacing: -1px;
+        font-size: calc($fontSizeInput - 20px);
+        margin-top: 5px;
+        padding: 2px 0;
+    }
+
+    .data-date input {
+        border: 1px solid $neutralColorLightGrey;
+        padding: 10px;
+        font-weight: bold;
+        color: black;
+        font-size: $fontSizeInput;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+   
+    // Botón de resultados
+    .data-bottom {
+        min-height: 1px;
+        border: 1px solid $neutralColorLightGrey;
+        margin: 40px 0;
+        position: relative;
+
+        div {
+            // width: 50px;
+            width: $widthDataBottom;
+            height: $widthDataBottom;
+            background-color: $primaryColorPurple;
+            border-radius: 50%;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            position: absolute;
+            top: calc($widthDataBottom / 2 - $widthDataBottom);
+            left: calc((100% - $widthDataBottom) / 2);
+            cursor: pointer;
+
+            &:hover {
+            background-color: black;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+            }
+
+            @media (width > $widthMobile) {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+
+    // Resultados 
+    .data-result {
+        padding: calc($paddingMain / 2);
+        font-size: 2.6rem;
+        font-weight: bolder;
+        font-style: italic;
+
+        span {
+            color: $primaryColorPurple;
+        }
+
+        @media (width > $widthMobile) {
+            font-size: 4rem;
+        }
+    }
+
+    @media (width > $widthMobile) {
+        width: 550px;
+        padding: calc($paddingMain + 0px);
+    }
+
+}

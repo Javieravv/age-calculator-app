@@ -1,0 +1,12 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "yarn sass --watch scss/stylesagecalculator.scss scss/stylesagecalculator.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
